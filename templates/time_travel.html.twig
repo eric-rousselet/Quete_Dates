@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h2>Dates : </h2>
+    <p>
+        Start : {{ start.date }}
+    </p>
+    <p>
+        End : {{ end.date }}
+    </p>
+    <p>
+        {{ sentence }}
+    </p>
+    <h2>Steps :</h2>
+    <ul>
+    {% for step in allDates %}
+        <li>{{ step }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
